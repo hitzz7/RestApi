@@ -12,7 +12,7 @@ class ApiViewSet(viewsets.ViewSet):
     
 
     def get_queryset(self):
-        # Fetch data from JSONPlaceholder
+        
         response = requests.get('https://jsonplaceholder.typicode.com/posts')
         data = response.json()
         return data
