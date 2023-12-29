@@ -9,15 +9,7 @@ class ApiSerializer(serializers.Serializer):
     
     
     
-    
-    
-    
-class CommentSerializer(serializers.Serializer):
-    postId=serializers.IntegerField()
-    id=serializers.IntegerField()
-    name = serializers.CharField()
-    email = serializers.EmailField()
-    body = serializers.CharField()
+  
     
 class AlbumSerializer(serializers.Serializer):
     userId = serializers.IntegerField()
